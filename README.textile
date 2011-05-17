@@ -1,0 +1,11 @@
+h1. mobile-preview
+
+Simple tool to preview websites' look in different mobile devices.
+
+h2. TODO
+
+* Improve design
+* Allow to specify which devices to display
+* Link to responsive web design tutorials
+* Add device dimensions
+* Improve scrolling

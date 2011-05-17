@@ -1,0 +1,45 @@
+html, body
+  padding: 0
+  margin: 0
+
+form
+  margin: 0
+  padding: 1em
+  background: #000
+  input[type=url]
+    border: 1px solid black
+      radius: 0.5em
+    font:
+      family: monospace
+    width: 100%
+    padding: .5em .25em
+
+.iphone
+  margin: 1em auto
+  &.portrait
+    width: 380px
+    height: 744px
+    background: url(images/iPhone-portrait.png) no-repeat left top
+    position: relative
+    iframe
+      position: absolute
+      top: 133px
+      left: 32px
+      width: 335px
+      height: 480px
+      overflow-x: hidden
+      border: none
+  &.landscape
+    height: 380px
+    width: 744px
+    background: url(images/iPhone-landscape.png) no-repeat left top
+    position: relative
+    iframe
+      position: absolute
+      left: 133px
+      top: 28px
+      height: 320px
+      width: 495px
+      overflow-x: hidden
+      border: none
+

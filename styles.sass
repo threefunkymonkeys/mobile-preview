@@ -43,3 +43,31 @@ form
       overflow-x: hidden
       border: none
 
+.ipad
+  margin: 1em auto
+  &.portrait
+    width: 997px
+    height: 1276px
+    background: url(images/iPad-portrait.png) no-repeat left top
+    position: relative
+    iframe
+      position: absolute
+      top: 127px
+      left: 115px
+      width: 768px
+      height: 1024px
+      overflow-x: hidden
+      border: none
+  &.landscape
+    height: 997px
+    width: 1276px
+    background: url(images/iPad-landscape.png) no-repeat left top
+    position: relative
+    iframe
+      position: absolute
+      left: 127px
+      top: 115px
+      height: 768px
+      width: 1024px
+      overflow-x: hidden
+      border: none

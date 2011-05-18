@@ -18,10 +18,14 @@
     loadSite: function(url, addShare) {
       var checkBlock = $("#checks-block");
       $(".ipad, .iphone").hide();
+      if( checkBlock.find("input:checked").length == 0 ) {
+        checkBlock.find("input").attr("checked", true);
+      }
       checkBlock.find("input:checked").each(function(){
         var value = $(this).val();
         $("#"+value).attr("src", url).parent().show();
       });
+
       $("#share").css("visibility", "visible").find("a").attr("href", "?url=" + encodeURIComponent(url) + addShare);
     }
   };

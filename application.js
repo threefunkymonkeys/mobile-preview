@@ -9,7 +9,7 @@
         $("input[name=url]").val(url);
         if(c = document.location.search.match(/(ipp|ipl|ipadp|ipadl)/g)) {
           $(c).each(function(){ $("input[name="+this+"]").attr("checked",true) });
-          console.log(c = document.location.search.match(/url=[^/&]+(.*)/));
+          c = document.location.search.match(/url=[^/&]+(.*)/);
           share = c[1];
         }
         MobilePreview.loadSite(url, share);

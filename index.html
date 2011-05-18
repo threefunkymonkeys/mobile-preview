@@ -19,8 +19,14 @@
 
   <p>This tool <strong>it is not a mobile device replacement</strong>, it will only help you when you start working with your responsive web design, but dully notice that you will always have and should test the final result with the real device. We are not responsible nor to blame if you don&apos;t work with the right tools.</p>
 
-  <form action="" method="GET">
+  <form id="url-form" action="" method="GET">
     <input type="url" name="url" value="" placeholder="Enter the URL that you would like to test:">
+    <div id="checks-block">
+      <label><input type="checkbox" name="ipp" value="iphone-portrait" > iPhone Portrait </label>
+      <label><input type="checkbox" name="ipl" value="iphone-landscape" >iPhone Landscape </label>
+      <label><input type="checkbox" name="ipadp" value="ipad-portrait" > iPad Portrait </label>
+      <label><input type="checkbox" name="ipadl" value="ipad-landscape" > iPad Landscape </label>
+    </div>
     <p>Try <a href="?url=http%3A%2F%2Fthreefunkymonkeys.com%2f"><span class="brand"><span>3</span><span class="funky">funky</span><span>monkeys</span></span>&apos;
     website</a> or
     the <a href="?url=http%3A%2F%2Fwww.alistapart.com%2Fd%2Fresponsive-web-design%2Fex%2Fex-site-FINAL.html">original
@@ -32,21 +38,21 @@
   </form>
 
   <section id="iphone">
-    <div class="iphone portrait">
+    <div class="iphone portrait" style="display: none">
       <iframe src="" id="iphone-portrait"></iframe>
     </div>
 
-    <div class="iphone landscape">
+    <div class="iphone landscape" style="display: none">
       <iframe src="" id="iphone-landscape"></iframe>
     </div>
   </section>
 
   <section id="ipad">
-    <div class="ipad portrait">
+    <div class="ipad portrait" style="display: none">
       <iframe src="" id="ipad-portrait"></iframe>
     </div>
 
-    <div class="ipad landscape">
+    <div class="ipad landscape" style="display: none">
       <iframe src="" id="ipad-landscape"></iframe>
     </div>
   </section>

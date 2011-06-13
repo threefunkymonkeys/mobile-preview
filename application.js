@@ -27,6 +27,15 @@
       });
 
       $("#share").css("visibility", "visible").find("a").attr("href", "?url=" + encodeURIComponent(url) + addShare);
+    },
+    requestShortURL: function(longURL, success) {
+        var API = 'http://json-tinyurl.appspot.com/?url=',
+            URL = API + encodeURIComponent(longURL) + '&callback=?';
+       
+            $.getJSON(URL, function(data){
+                  success && success(data.tinyurl);
+            });
+         
     }
   };
 

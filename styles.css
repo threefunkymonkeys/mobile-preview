@@ -27,6 +27,8 @@ a {
   color: #b58900; }
   a img {
     border: none; }
+a.share-links img {
+  vertical-align: middle; }
 
 #share {
   visibility: hidden; }

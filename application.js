@@ -26,7 +26,7 @@
         $("#"+value).attr("src", url).parent().show();
       });
       MobilePreview.requestShortURL("http://threefunkymonkeys.github.com/mobile-preview/?url=" + encodeURIComponent(url), function(tinyurl) {
-          var twitter_link = "http://twitter.com/share?text=" + encodeURIComponent("I just tested a responsive web using mobile-preview, check it " + tinyurl + " via @3funkymonkeys");
+          var twitter_link = "http://twitter.com/share?text=" + encodeURIComponent("I just tested a responsive web using mobile-preview, check it here ") + "&url=" + tinyurl + "&via=3funkymonkeys";
           $("#tw-link").attr("href", twitter_link);
           $("#share").css("visibility", "visible").find("#other-link").attr("href", "?url=" + encodeURIComponent(url) + addShare);
       } );
